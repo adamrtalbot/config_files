@@ -33,6 +33,9 @@ set complete=.,w,b,t                        "
 
 set hidden
 
+set splitbelow                              " Splits to below instead of above
+set splitright                              " Splits to right rather than left
+
 set rtp+=~/.vim/bundle/Vundle.vim           " set the runtime path to include Vundle and initialize
 call vundle#begin()
 
