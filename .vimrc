@@ -43,7 +43,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
-Plugin 'tomasr/molokai'                     " Molokai colorscheme
+Plugin 'sickill/vim-monokai'                " Monokai colorscheme
 Plugin 'Valloric/YouCompleteMe'             " YouCompleteMe
 Plugin 'scrooloose/nerdtree'                " Nerdtree for file browsing
 Plugin 'scrooloose/nerdcommenter'
@@ -57,9 +57,8 @@ Plugin 'tmhedberg/SimpylFold'               " Python indentation
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-syntax on
-
-colorscheme molokai                         " Use molokai colour theme
+syntax enable
+colorscheme monokai                         " Use monokai colour theme
 
 " NERDTree
 let NERDTreeShowBookmark=1		            " Show bookmarks table on startup
