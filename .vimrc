@@ -75,6 +75,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " DelimiteMate Setup
 let delimitMate_expand_space=1		        " Expand <space> inside empty delimiters
 let delimitMate_expand_cr=1		            " Expand <cr> inside empty delimiters
+set bs=2                                    " Backspace set to 2. Needs to be set for compatibility with DelimiteMate"
 
 " Airline
 let g:airline_powerline_fonts = 1
