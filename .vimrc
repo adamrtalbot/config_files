@@ -51,8 +51,8 @@ Plugin 'Raimondi/delimitMate'               " Automatic parenthesis closing
 Plugin 'tpope/vim-fugitive'                 " Git integration
 Plugin 'godlygeek/tabular'                  " Tabulate stuff
 Plugin 'bling/vim-airline'                  " Status bar at bottom of window
-Plugin 'ctrlpvim/ctrlp'                     " Fuzzy file finder in vim
 Plugin 'tmhedberg/SimpylFold'               " Python indentation
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
