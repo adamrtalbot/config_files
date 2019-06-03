@@ -52,7 +52,8 @@ Plugin 'tpope/vim-fugitive'                 " Git integration
 Plugin 'godlygeek/tabular'                  " Tabulate stuff
 Plugin 'bling/vim-airline'                  " Status bar at bottom of window
 Plugin 'tmhedberg/SimpylFold'               " Python indentation
-Plugin 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'                    " Recursive search functionality
+Plugin 'Yggdroot/indentLine'                " Draw lines for indentation
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -96,3 +97,8 @@ let g:airline_section_c='%t'
 
 " Simple Fold
 let g:SimpylFold_docstring_preview=1
+
+" indentLine
+let g:indentLine_enabled = 1
+let g:indentLine_concealcursor = 'inc'
+let g:indentLine_conceallevel = 2
