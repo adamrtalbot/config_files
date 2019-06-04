@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/adamtalbot/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -18,6 +18,8 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
+
+ZSH_DISABLE_COMPFIX="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -70,6 +72,7 @@ CASE_SENSITIVE="true"
 # Add wisely, as too many plugins slow down shell startup.
 
 # Autocomplete found at: https://github.com/zsh-users/zsh-autosuggestions
+# Syntax highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
 
 plugins=(
     common-aliases
@@ -85,6 +88,7 @@ plugins=(
     rsync
     tmux
     zsh-autosuggestions
+    zsh-syntax-highlighting
     )
 
 source $ZSH/oh-my-zsh.sh
