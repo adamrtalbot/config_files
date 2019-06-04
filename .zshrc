@@ -68,6 +68,9 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+# Autocomplete found at: https://github.com/zsh-users/zsh-autosuggestions
+
 plugins=(
     common-aliases
     git
@@ -81,7 +84,8 @@ plugins=(
     python
     rsync
     tmux
-)
+    zsh-autosuggestions
+    )
 
 source $ZSH/oh-my-zsh.sh
 
