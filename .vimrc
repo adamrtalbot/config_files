@@ -43,7 +43,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'               " let Vundle manage Vundle, required
-Plugin 'tomasr/molokai'                     " Molokai colorscheme
+Plugin 'sickill/vim-monokai'                " Monokai colorscheme
 Plugin 'Valloric/YouCompleteMe'             " YouCompleteMe
 Plugin 'scrooloose/nerdtree'                " Nerdtree for file browsing
 Plugin 'scrooloose/nerdcommenter'
@@ -51,15 +51,15 @@ Plugin 'Raimondi/delimitMate'               " Automatic parenthesis closing
 Plugin 'tpope/vim-fugitive'                 " Git integration
 Plugin 'godlygeek/tabular'                  " Tabulate stuff
 Plugin 'bling/vim-airline'                  " Status bar at bottom of window
-Plugin 'ctrlpvim/ctrlp'                     " Fuzzy file finder in vim
 Plugin 'tmhedberg/SimpylFold'               " Python indentation
+Plugin 'mileszs/ack.vim'                    " Recursive search functionality
+Plugin 'Yggdroot/indentLine'                " Draw lines for indentation
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-syntax on
-
-colorscheme molokai                         " Use molokai colour theme
+syntax enable
+colorscheme monokai                         " Use monokai colour theme
 
 " NERDTree
 let NERDTreeShowBookmark=1		            " Show bookmarks table on startup
@@ -76,6 +76,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " DelimiteMate Setup
 let delimitMate_expand_space=1		        " Expand <space> inside empty delimiters
 let delimitMate_expand_cr=1		            " Expand <cr> inside empty delimiters
+set bs=2                                    " Backspace set to 2. Needs to be set for compatibility with DelimiteMate"
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -96,3 +97,8 @@ let g:airline_section_c='%t'
 
 " Simple Fold
 let g:SimpylFold_docstring_preview=1
+
+" indentLine
+let g:indentLine_enabled = 1
+let g:indentLine_concealcursor = 'inc'
+let g:indentLine_conceallevel = 2
